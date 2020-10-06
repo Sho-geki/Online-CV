@@ -10,5 +10,27 @@
 
 body{
 	background: #585c68;
-	font-size: 
+	font-size: 14px;
+	line-height: 22px;
+	color: #555555;
+}
+
+.bold{
+	font-weight: 600;
+	font-size: 20px;
+	text-transform: uppercase;;
+
+}
+
+.semi-bold{
+	font-weight: 600;
+	font-size: 16px;
+
+}
+
+.onlineCV{
+	width: 800px;
+	height: auto;
+	display: flex;
+	margin: 50px auto;
 }
