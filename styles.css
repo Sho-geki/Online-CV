@@ -3,34 +3,401 @@
 *{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
-	list-style: none;
-	font-family: 'Roboto Mono', monospace;
+	/*box-sizing: border-box;
+	list-style: none;*/
+	
 }
 
 body{
-	background: #585c68;
-	font-size: 14px;
-	line-height: 22px;
-	color: #555555;
+
+	font-family: 'Roboto Mono', monospace;
+	background: linear-gradient(to left, #9842a8, #ba382f);
+	/*font-size: 14px;
+	line-height: 22px;*/
+	
+}
+
+.banner-text{
+	width: 100%;
+	position: absolute;
+	background: linear-gradient(to left, #9842a8, #ba382f);
+	
+}
+.banner-text ul{
+	height: 10px;
+	float: right;
+	
+
+}
+
+.banner-text ul li{
+	display: inline-block;
+	padding: 40px 15px;
+	text-transform: uppercase;
+	color: #FFFFFF
+	font-size: 16px;
+	
+	
+	
+}
+.banner-text h2{
+	text-align: center;
+	color: #000000;
+	font-size: 50px;
+	margin-top: 20%;
+	border: 5px solid #000;
+	background: linear-gradient(to left, #9842a8, #ba382f);
+}
+
+.animation-area{
+	background: linear-gradient(to left, #FF9033, #6F6B59);
+	width: 100%;
+	height: 100vh;
+	animation: animate 20s linear infinite;
+	
+	
+}
+.box-area{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 300%;
+	overflow: hidden;
+}
+.box-area li{
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: rgba(255.255,255,0,2);
+	animation: animate 5s linear infinite;
+	bottom:-20px;
+}
+.box-area li:nth-child(1){
+	left:86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+	animation-duration: 5s;
+}
+.box-area li:nth-child(2){
+	left:12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 0s;
+	animation-duration: 5s;
+}
+.box-area li:nth-child(3){
+	left:70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 0s;
+	animation-duration: 5s;
+}
+.box-area li:nth-child(4){
+	left:42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 5s;
+	
+}
+.box-area li:nth-child(5){
+	left:65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+	animation-duration: 5s;	
+}
+.box-area li:nth-child(6){
+	left:15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 0s;
+	animation-duration: 5s;	
+}
+
+@keyframes animate{
+	0%{
+		transform: translateY(0) rotate(0deg);
+		opacity: 0.7;
+	}
+	100%{
+		transform: translateY(-200px) rotate(360deg);
+		opacity: 0;
+	}
 }
 
 .bold{
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 20px;
 	text-transform: uppercase;;
 
 }
 
-.semi-bold{
-	font-weight: 600;
+.regular{
+	font-weight: 500;
 	font-size: 16px;
 
 }
 
 .onlineCV{
-	width: 800px;
-	height: auto;
+	/*width: flex;
+	height: 1200px;*/
 	display: flex;
-	margin: 50px auto;
+	margin: 0px auto;
+	background: linear-gradient(to left, #00FFFF, #2F4F4F);
+	width: 100%;
+	height: 141.5vh;
+}
+
+.onlineCV .onlineCV_left{
+	width: 330px;
+	background: #808080;
+	opacity: 0.6;
+}
+
+/*.onlineCV .onlineCV_left .onlineCV_background{
+	width: 800px;
+	height: flex;
+}*/
+
+.onlineCV .onlineCV_left .onlineCV_profile{
+	width: 100%;
+	height: 300px;
+}
+
+.onlineCV .onlineCV_left .onlineCV_profile img{
+	width: 100%;
+	height: 105%;
+}
+
+.onlineCV .onlineCV_left .onlineCV_content{
+	padding: 0 25px;
+}
+
+.onlineCV .title{
+	margin-bottom: 20px;
+}
+
+.onlineCV .onlineCV_left .bold{
+	color: #fff;
+}
+
+.onlineCV .onlineCV_left .regular{
+	color: #b1eaff;
+}
+
+.onlineCV .onlineCV_item{
+	padding: 25px 0;
+	border-top: 2px solid #000;
+}
+
+.onlineCV .onlineCV_left .onlineCV_item:last-child
+.onlineCV .onlineCV_right .onlineCV_item:last-child{
+	border-bottom: 0px;
+}
+
+.onlineCV .onlineCV_left ul li{
+	display: flex;
+	margin-bottom: 10px;
+	align-items: center;
+	
+}
+
+.onlineCV .onlineCV_left ul li:last-child{
+	margin-bottom: 0;
+}
+
+.onlineCV .onlineCV_left ul li .icon{
+	width: 15px;
+	height: 15px;
+	background: #808080;
+	color: #0bb5f4
+	border-radius: 50%;
+	margin-right: 15px;
+	font-size: 16px;
+	position: relative;
+}
+
+.onlineCV .icon i,
+.onlineCV .onlineCV_right .onlineCV_hobbies ul li i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.onlineCV .onlineCV_left ul li .data{
+	color: #000;
+}
+
+.onlineCV .onlineCV_left .onlineCV_skills ul li{
+	display: flex;
+	margin-bottom: 10px;
+	color: #000;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.onlineCV .onlineCV_left .onlineCV_skills ul li .skill_name{
+	width: 25%;
+}
+
+.onlineCV .onlineCV_left .onlineCV_skills ul li .skill_progress{
+	width: 60%;
+	margin: 0 5px;
+	height:  5px;
+	background: #fff;
+	position: relative;
+}
+
+.onlineCV .onlineCV_left .onlineCV_skills ul li .skill_per{
+	width: 15%;
+}
+.onlineCV .onlineCV_left .onlineCV_skills ul li .skill_progress span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #009fd9;
+}
+
+.onlineCV .onlineCV_left .onlineCV_social .regular{
+	color: #fff;
+	margin-bottom: 3px;
+}
+
+.onlineCV .onlineCV_right{
+	display: center;
+	margin-top: 200px;
+	width: 1902px;
+	background: #FF0000;
+	height: 786px;
+	opacity: 1.4;
+	
+	
+}
+
+.onlineCV .onlineCV_right .bold{
+	color: #000;
+}
+
+.onlineCV .onlineCV_right .onlineCV_work ul,
+.onlineCV .onlineCV_right .onlineCV_education ul{
+	padding-left: 40px;
+	overflow: hidden;
+}
+
+.onlineCV .onlineCV_right ul li{
+	position: relative;
+}
+
+.onlineCV .onlineCV_right ul li .date{
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	margin-right: 25px;
+}
+
+.onlineCV .onlineCV_right ul li .info{
+	margin-bottom: 25px;
+}
+
+.onlineCV .onlineCV_right ul li:last child .info{
+	margin-bottom: 0;
+}
+
+.onlineCV .onlineCV_right .onlineCV_work ul li:before,
+.onlineCV .onlineCV_right .onlineCV_education ul li:before{
+	content:"";
+	position: absolute;
+	top: 5px;
+	left: -25px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	border: 2px solid #0bb5f4;
+}
+
+.onlineCV .onlineCV_right .onlineCV_work ul li:after,
+.onlineCV .onlineCV_right .onlineCV_education ul li:after{
+	content:"";
+	position: absolute;
+	top: 14px;
+	left: -21px;
+	width: 2px;
+	height: 115px;
+	background: #0bb5f4;
+}
+
+.onlineCV .onlineCV_right .onlineCV_hobbies ul li{
+	width: 40px;
+	height: 200px;
+	border: 1px solid #0bb5f4;
+	border-radius: 50%;
+	position: center;
+	color: #0bb5f4;
+}
+
+
+.onlineCV .onlineCV_right .onlineCV_hobbies ul{
+	display: center;
+	justify-content: space-between;
+	margin-left: 450px;
+}
+
+.onlineCV .onlineCV_right .onlineCV_hobbies ul li{
+	width: 40px;
+	height: 40px;
+	border: 2px solid #FF0000;
+	border-radius: 25%;
+	position: center;
+	color: #000;
+	font-size: 40px;
+}
+
+.onlineCV .onlineCV_right .onlineCV_hobbies ul li i{
+	font-size: 80px;
+}
+
+.onlineCV .onlineCV_right .onlineCV_hobbies ul li:last-child:before{
+	display: none;
+}
+
+.loader {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loader > img {
+	width: 2000px;
+}
+.loader.hidden {
+	animation: fadeOut 3s;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeOut {
+	100%{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.github-worklist{
+	text-align: center;
+	margin-left: 50px;
+	margin-top: 100px;
 }
