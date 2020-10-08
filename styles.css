@@ -274,8 +274,8 @@ body{
 	display: center;
 	margin-top: 200px;
 	width: 1902px;
-	background: #FF0000;
-	height: 786px;
+	background: #06854E;
+	height: 791px;
 	opacity: 1.4;
 	
 	
@@ -352,7 +352,7 @@ body{
 .onlineCV .onlineCV_right .onlineCV_hobbies ul li{
 	width: 40px;
 	height: 40px;
-	border: 2px solid #FF0000;
+	border: 2px solid #06854E;
 	border-radius: 25%;
 	position: center;
 	color: #000;
@@ -396,8 +396,12 @@ body{
 	}
 }
 
-.github-worklist{
-	text-align: center;
-	margin-left: 50px;
-	margin-top: 100px;
+.Table-responsive{
+	color: #000;
+	margin-left: 800px;
+	margin-top: -1200px;
+	
+	
+
+
 }
