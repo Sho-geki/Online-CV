@@ -149,7 +149,7 @@ body{
 .bold{
 	font-weight: 700;
 	font-size: 20px;
-	text-transform: uppercase;;
+	text-transform: uppercase;
 
 }
 
@@ -270,6 +270,7 @@ body{
 	height:  5px;
 	background: #fff;
 	position: relative;
+
 }
 
 .onlineCV .onlineCV_left .onlineCV_skills ul li .skill_per{
@@ -359,6 +360,8 @@ body{
 	border-radius: 50%;
 	position: center;
 	color: #0bb5f4;
+	max-width: 1920px;
+	min-width: 480px;
 }
 
 
@@ -376,6 +379,9 @@ body{
 	position: center;
 	color: #000;
 	font-size: 40px;
+	max-width: 1920px;
+	min-width: 480px;
+
 }
 
 .onlineCV .onlineCV_right .onlineCV_hobbies ul li i{
@@ -403,6 +409,8 @@ body{
 
 .loader > img {
 	width: 2000px;
+	max-width: 1920px;
+	min-width: 480px;
 }
 .loader.hidden {
 	animation: fadeOut 3s;
@@ -423,6 +431,29 @@ body{
 	margin-top: -1200px;
 	
 	
+	
+}
 
+.Corona-Table{
+	color: #000;
+	margin-left: 725px;
+	margin-top: 50px;
+	table-layout: center;
+}
 
+.CTable{
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-left: 725px;
+	margin-top: 500px;
+
+}
+
+.PTable{
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-top: 100px;
+	margin-left: 400px;
 }
